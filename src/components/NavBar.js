@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from "./CartWidget"
 
 const NavBar = () => {
     return (
@@ -12,6 +13,7 @@ const NavBar = () => {
                         <button type="button" class="btn btn-outline-light">Categoría 3</button>
                         <button type="button" class="btn btn-outline-light">Categoría 4</button>
                     </div>
+                    <CartWidget />
                 </div>
             </nav>
         </>

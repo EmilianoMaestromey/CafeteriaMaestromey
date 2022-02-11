@@ -1,10 +1,11 @@
-import ItemCount from './ItemCount'
+import ItemList from './ItemList'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = (props) => {
     return (
         <>
-            <div>{greeting}</div>
-            <ItemCount stock="5" initial="1" />
+        <div>
+            <ItemList />
+        </div>    
         </>
     );
 };

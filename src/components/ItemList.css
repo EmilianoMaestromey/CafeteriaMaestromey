@@ -1,0 +1,13 @@
+.itemCont {
+    margin: 1%;
+    padding: 1%;
+    border: 1px black solid;
+    text-align: center;
+    width: 300px;
+}
+.center {
+    align-items: center;
+}
+img {
+    width: 50%;
+}

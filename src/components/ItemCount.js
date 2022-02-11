@@ -1,6 +1,6 @@
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './ItemCount.css'
+import './ItemCount.css';
 
 const ItemCount = (props) => {
 
@@ -21,13 +21,14 @@ const ItemCount = (props) => {
     return (
         <div className="card card-width">
             <div className="card-body">
-                <h5 className="class-title">Producto 1</h5>
                 <h6 className="class-subtitle mb-2 text-muted">En stock: {props.stock}</h6>
                 <div className="btn-group" role="group" aria-label="Basic outlined example">
                     <button type="button" className="btn btn-danger" onClick={() => decrement()}>-</button>
                     <button type="button" className="btn btn-outline-danger" disabled>{amount}</button>
                     <button type="button" className="btn btn-danger" onClick={() => increment()}>+</button>
                 </div>
+                <hr />
+                <button type="button" className="btn btn-outline-dark">Añadir al carro</button>
             </div>
         </div>
     );
